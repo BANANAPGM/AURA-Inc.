@@ -305,7 +305,7 @@ body.no-scroll {
   justify-content: center;
   text-align: center;
   padding-top: 80px;
-  filter: drop-shadow(30px 14px 10px#666666);
+  filter: drop-shadow(30px 14px 10px #666666);
 }
 .hero h1 {
   font-size: 64px;
@@ -369,3 +369,4 @@ model-viewer {
   position: relative;
   display: block;
 }
+
