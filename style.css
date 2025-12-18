@@ -304,7 +304,8 @@ body.no-scroll {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: 80px; /* compense le header fixe */
+  padding-top: 80px; 
+  drop-shadow(30px 14px 10px #4A4A4A);
 }
 .hero h1 {
   font-size: 64px;
@@ -366,3 +367,4 @@ model-viewer {
   position: relative;
   display: block;
 }
+
