@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EARIA — Maison</title>
+
+    <!-- (Facultatif) Polices : Playfair Display + Questrial -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Header fixe + navigation -->
+    <header>
+      <nav class="nav" aria-label="Navigation principale">
+        <div class="logo" aria-label="EARIA">AURA</div>
+
+        <!-- Bouton burger (mobile) attendu par le JS -->
+        <button
+          class="nav-toggle"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <!-- Menu principal -->
+        <ul class="menu" role="menubar">
+          <li class="menu-item"><a href="#collection-view">COLLECTION</a></li>
+
+          <li class="menu-item has-submenu">
+            <a href="#"> MAISON</a>
+            <ul class="submenu" role="menu">
+              <p class="submenu-item"><a href="#AURAtt">Histoire</a></p>
+              <p class="submenu-item"><a href="#AURAtt">Valeurs</a></p>
+              <p class="submenu-item"><a href="#AURAtt">Équipe</a></p>
+            </ul>
+          </li>
+
+          <a class="menu-item">CONTACT</a>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenu de ta page conservé et structuré -->
+    <section class="hero" aria-label="EARIA Hero">
+      <div class="hero-inner">
+      </div>
+    </section>
+
+    <section aria-labelledby="essence-title">
+      <h2 id="AURAtt">AURA Inc.</h2>
+
+      <div class="grid">
+        <article class="card" >
+          <h3>Histoire</h3>
+          <p id="c-1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem,
+            repellendus. Doloremque laboriosam cumque dignissimos.
+          </p>
+        </article>
+
+        <article class="card" id="c-2">
+          <h3>Valeurs</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+            voluptatem, modi pariatur sed earum.
+          </p>
+        </article>
+
+        <article class="card" id="c-3">
+          <h3>Notre Equipe</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus, itaque. Facilis reiciendis omnis.
+          </p>
+        </article>
+      </div>
+    </section>
+    <section>
+    </section>
+      <model-viewer
+      src="Images/Proto3-1.glb"
+      id="collection-view"
+      camera-controls
+      autoplays
+      class="view"
+      style="width: 100%; max-width: 900px; height: 600px; margin: 0 auto;"
+    ></model-viewer>
+    
+    <aside class="view-text" aria-label="Caractéristiques du produit">
+      <h2>Caractéristiques</h2>
+      <ul class="spec-list">
+        <a><strong>Matière :</strong> Cuir pleine fleur</a>
+        <a><strong>Finition :</strong> Grain fin, teinture naturelle</a>
+        <a><strong>Couleurs :</strong> Noir, Ébène, Ivoire</a>
+        <a><strong>Édition :</strong> Limitée (500 pièces)</a>
+      </ul>
+      <button class="comm-b1" href="#">Réserver</button>
+
+      <model-viewer
+      src="Images/Proto4.glb"
+      camera-controls
+      autoplays
+      class="view"
+      style="width: 100%; max-width: 900px; height: 600px; margin: 0 auto;"
+    ></model-viewer>
+    
+    <aside class="view-text" aria-label="Caractéristiques du produit">
+      <h2>Caractéristiques</h2>
+      <ul class="spec-list">
+        <a><strong>Matière :</strong> Cuir pleine fleur</a>
+        <a><strong>Finition :</strong> Grain fin, teinture naturelle</a>
+        <a><strong>Couleurs :</strong> Noir, Ébène, Ivoire</a>
+        <a><strong>Édition :</strong> Limitée (500 pièces)</a>
+      </ul>
+      <button class="comm-b2">Réserver</button>
+
+
+      <footer>
+        © 2025 AURA Inc. — LOREM IPSUM DOLOR SIT AMET
+      </footer>
+
+
+
+    <!-- Script -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
