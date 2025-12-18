@@ -304,8 +304,8 @@ body.no-scroll {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: 80px; 
-  drop-shadow(30px 14px 10px #666666);
+  padding-top: 80px;
+  filter: drop-shadow(30px 14px 10px#666666);
 }
 .hero h1 {
   font-size: 64px;
@@ -336,6 +336,8 @@ section h2 {
   background: white;
   padding: 40px;
   border: 1px solid #e5e5e5;
+  filter: drop-shadow(30px 14px 10px#999999);
+  border-radius: 20%;
 }
 .card h3 {
   margin-bottom: 20px;
@@ -367,5 +369,3 @@ model-viewer {
   position: relative;
   display: block;
 }
-
-
